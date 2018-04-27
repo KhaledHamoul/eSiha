@@ -10,11 +10,11 @@
           <?php echo csrf_field(); ?>
 
          <h4>Informations de patient</h4>
-         <span><b>Date de naissance :</b> 12-07-1996</span> <span>Age : <b>22 ans</b></span> <span>Groupe sangun : <b>A+</b></span>
+         <span class="form-control"><b>Date de naissance :</b> 12-07-1996</span> <span class="form-control">Age : <b>22 ans</b></span> <span class="form-control">Groupe sangun : <b>A+</b></span>
          <span><b>Situation familiale  :</b> Cilibatere</span> <span>Numero deSecurite social : <b>01993434543535345</b></span> <span>Profession : <b>Etudiant</b></span>
          <h4>Informations de Consultation</h4>
          <div class="form-group">
-           <input type="date" name="" value="">
+           <input class="form-control" type="date" name="" value="">
          </div>
          <div class="form-group">
            <select class="form-control" name="idGrp" required>
@@ -24,9 +24,9 @@
            </select>
          </div>
          <div class="form-group">
-           <input type="text" name="" value="" placeholder="Object">
+           <input class="form-control" type="text" name="" value="" placeholder="Object">
          </div>
-         <div class="col-md-6">
+         <div class="form-group">
              <label for="">Remarque & Description</label>
              <textarea class="form-control" placeholder=". . ." name="description" style="height: 154px;" required></textarea>
          </div>
