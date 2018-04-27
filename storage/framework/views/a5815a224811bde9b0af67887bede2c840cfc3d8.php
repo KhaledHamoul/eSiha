@@ -19,8 +19,7 @@
                             <div class="card-body">
                                 <form action="#">
                                     <div class="form-body">
-                                        <h3 class="card-title">Person Info</h3>
-                                        <hr>
+                                       
                                        
                                         <h3 class="box-title m-t-40">Address</h3>
                                         <hr>

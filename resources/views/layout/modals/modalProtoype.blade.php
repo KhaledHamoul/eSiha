@@ -1,4 +1,10 @@
 
+  <!-- MODAL -->
+
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  <button  type="button" class="btn btn-dark btn-outline m-b-10 m-l-5 pull-right" data-toggle="modal"  data-target="#myModal">+ Analyse / Radio</button>
+
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
