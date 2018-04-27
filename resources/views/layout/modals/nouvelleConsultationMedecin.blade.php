@@ -9,7 +9,9 @@
         <form method="post" action="createProspect">
           @csrf
 
-          <hr/>
+         <h4>Informations de patient</h4>
+         <span>Date de naissance : 12-07-1996</span> <span>Age : 22 ans</span> <span>Groupe sangun : A+</span>
+
 
           <div class="row">
             <div class="col-md-12">
