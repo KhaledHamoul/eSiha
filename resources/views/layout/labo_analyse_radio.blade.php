@@ -1,5 +1,6 @@
-@include('layout.top')
 @include('layout.header')
+@include('layout.top')
+
 @include('layout.aside_menu_labo')
 
   <!-- Page wrapper  -->

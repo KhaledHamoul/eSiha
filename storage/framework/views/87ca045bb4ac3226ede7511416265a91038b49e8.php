@@ -20,7 +20,7 @@
                             </li>
 
                             <li class="nav-label">Options</li>
-                            <li> <a class="" href="#" aria-expanded="false"><i class="fa fa-envelope-o"></i><span class="hide-menu">Messagerie</span></a></li>
+                            <li> <a class="" href="labo_messagerie" aria-expanded="false"><i class="fa fa-envelope-o"></i><span class="hide-menu">Messagerie</span></a></li>
                             <li> <a class="" href="labo_rendez_vous" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Rendez-vous</span></a></li>
                             <li> <a class="" href="labo_analyse_radio" aria-expanded="false"><i class="fa fa-search"></i><span class="hide-menu">Analyses / Radios</span></a></li>
                             <li> <a class="" href="labo_patients" aria-expanded="false"><i class="fa fa-users"></i><span class="hide-menu">Nos patients</span></a></li>
