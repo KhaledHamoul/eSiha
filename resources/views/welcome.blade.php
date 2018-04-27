@@ -15,7 +15,8 @@
   @include('layout.aside_menu_medecin')
   @include('layout.medecin_notification_page')
 @elseif($typeUser == "labo")
-  
+  @include('layout.aside_menu_labo')
+  @include('layout.labo_page_content')
 @endif
 
 

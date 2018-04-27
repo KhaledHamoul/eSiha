@@ -70,6 +70,10 @@ Route::get('/labo_patients', function () {
     return view('layout.labo_patients');
 });
 
+Route::get('/labo_messagerie', function () {
+    return view('layout.labo_patients');
+});
+
 
 Auth::routes();
 
