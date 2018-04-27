@@ -1,4 +1,5 @@
-   <footer class="footer"> © 2018 All rights reserved. Template designed by <a href="https://colorlib.com">Colorlib</a></footer>
+  <!-- footer -->
+            <footer class="footer"> © 2018 All rights reserved. Template designed by <a href="https://colorlib.com">Colorlib</a></footer>
             <!-- End footer -->
         </div>
         <!-- End Page wrapper  -->
@@ -15,30 +16,23 @@
     <script src="js/sidebarmenu.js"></script>
     <!--stickey kit -->
     <script src="js/lib/sticky-kit-master/dist/sticky-kit.min.js"></script>
-    <!--Custom JavaScript -->
 
 
-    <!-- Amchart -->
-     <script src="js/lib/morris-chart/raphael-min.js"></script>
-    <script src="js/lib/morris-chart/morris.js"></script>
-    <script src="js/lib/morris-chart/dashboard1-init.js"></script>
+    <script src="js/lib/datamap/d3.min.js"></script>
+    <script src="js/lib/datamap/topojson.js"></script>
+    <script src="js/lib/datamap/datamaps.world.min.js"></script>
+    <script src="js/lib/datamap/datamap-init.js"></script>
 
-
-	<script src="js/lib/calendar-2/moment.latest.min.js"></script>
-    <!-- scripit init-->
-    <script src="js/lib/calendar-2/semantic.ui.min.js"></script>
-    <!-- scripit init-->
-    <script src="js/lib/calendar-2/prism.min.js"></script>
-    <!-- scripit init-->
-    <script src="js/lib/calendar-2/pignose.calendar.min.js"></script>
-    <!-- scripit init-->
-    <script src="js/lib/calendar-2/pignose.init.js"></script>
-
+    <script src="js/lib/weather/jquery.simpleWeather.min.js"></script>
+    <script src="js/lib/weather/weather-init.js"></script>
     <script src="js/lib/owl-carousel/owl.carousel.min.js"></script>
     <script src="js/lib/owl-carousel/owl.carousel-init.js"></script>
-    <script src="js/scripts.js"></script>
-    <!-- scripit init-->
 
+
+    <script src="js/lib/chartist/chartist.min.js"></script>
+    <script src="js/lib/chartist/chartist-plugin-tooltip.min.js"></script>
+    <script src="js/lib/chartist/chartist-init.js"></script>
+    <!--Custom JavaScript -->
     <script src="js/custom.min.js"></script>
 
 </body>
