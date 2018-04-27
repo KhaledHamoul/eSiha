@@ -20,7 +20,10 @@ Route::get('/home_medecin', function () {
     return view('welcome')->with('teypeUser','medecin');
 });
 Route::get('/medecin_page_content', function () {
-    return view('welcome')->with('teypeUser','medecin');
+    return view('welcome')->with('teypeUser','medecin-dash');
+});
+Route::get('/medecin_profile_page', function () {
+    return view('welcome')->with('teypeUser','medecin-profile');;
 });
 
 

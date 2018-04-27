@@ -10,7 +10,7 @@
                         <li> <a class="collapse " href="/medecin_page_content" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Tableau de bord </span></a>
                         </li>
                         <li class="nav-label">Profile</li>
-                        <li> <a class="collapse" href="#" aria-expanded="false"><i class="fa fa-user-md"></i><span class="hide-menu">Mon Profile</span></a>
+                        <li> <a class="collapse" href="/medecin_profile_page" aria-expanded="false"><i class="fa fa-user-md"></i><span class="hide-menu">Mon Profile</span></a>
                         </li>
                         <li> <a class=""  href="#" aria-expanded="false"><i class="fa fa-bell"></i><span class="hide-menu">Notifications <span class="label label-rouded label-danger pull-right " style="position: relative; top:1px;">1</span></span></a>
                         </li>

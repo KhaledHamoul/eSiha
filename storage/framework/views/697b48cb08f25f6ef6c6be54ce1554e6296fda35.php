@@ -4,6 +4,12 @@
 <?php if($teypeUser == "medecin"): ?>
   <?php echo $__env->make('layout.aside_menu_medecin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
   <?php echo $__env->make('layout.medecin_page_content', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php elseif($teypeUser == "medecin-dash"): ?>
+  <?php echo $__env->make('layout.aside_menu_medecin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+  <?php echo $__env->make('layout.medecin_page_content', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php elseif($teypeUser == "medecin-profile"): ?>
+  <?php echo $__env->make('layout.aside_menu_medecin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+  <?php echo $__env->make('layout.medecin_profile_page', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <?php elseif($teypeUser == "labo"): ?>
   <?php echo $__env->make('layout.aside_menu_labo', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
   <?php echo $__env->make('layout.labo_page_content', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
