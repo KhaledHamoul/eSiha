@@ -33,9 +33,18 @@
 
       </div>
       <div class="modal-footer">
-        <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
+        <button class="btn btn-danger" data-dismiss="modal" onclick="hideFade()">Fermer</button>
         <input class="btn btn-success" type="submit" value="Ajouter"></form>
       </div>
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+  hideFade = function(){
+  //  alert("fdg");
+      $('.modal').hide();
+      $('.modal-backdrop').remove();
+    //  alert('dklfjksjkdfjg');
+  }
+</script>

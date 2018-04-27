@@ -89,7 +89,7 @@
               </div>
               <!-- /# card -->
             </div>
-            <!-- /# column -->$
+            <!-- /# column -->
                 </div>
             </div>
             <!-- End Container fluid  -->
