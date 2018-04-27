@@ -84,3 +84,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/medecin_messagerie', function () {
     return view('layout.medecin_messagerie');
 });
+
+Route::get('/chalange',"HomeController@chalange");

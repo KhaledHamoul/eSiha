@@ -12,15 +12,49 @@
 
       <!-- Modal content-->
       <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" onclick="removeDiv()" data-dismiss="modal">Close</button>
+        <div class="card card-outline-primary">
+
+            <div class="card-body">
+                <form action="#">
+                    <div class="form-body">
+                        <h3 class="card-title">Nouvelle consultation</h3>
+                        <hr>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-12 ">
+                                <div class="form-group">
+                                    <label>Patient : <b>HAMOUL Khaled</b></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Date</label>
+                                    <input type="date" class="form-control">
+                                </div>
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Objet</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <!--/span-->
+                        </div>
+                        <!--/row-->
+                                <div class="form-group">
+                                    <label>Notes</label>
+                                    <textarea class="form-control" name="name" rows="8" cols="80"></textarea>
+                                </div>
+                    </div>
+                    <div class="form-actions pull-right">
+                        <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i>Enregistrer</button>
+                        <button type="button" class="btn btn-inverse" data-dismiss="modal">Annuler</button>
+                    </div>
+                </form>
+            </div>
         </div>
       </div>
 
