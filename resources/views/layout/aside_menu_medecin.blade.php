@@ -7,7 +7,7 @@
                     <ul id="sidebarnav">
                         <li class="nav-devider"></li>
                         <li class="nav-label">Accueil</li>
-                        <li> <a class=" " href="medecinHome" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Tableau de bord </span></a>
+                        <li> <a class=" " href="medecinDash" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Tableau de bord </span></a>
                         <li class="nav-label">Patient</li>
                         <li> <a class="" href="med_listPatients" aria-expanded="false"><i class="fa fa-table"></i><span class="hide-menu">Liste des patients </span></a>
                         </li>

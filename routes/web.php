@@ -17,7 +17,7 @@
    return view('medecinListPatients');
   });
   Route::get('medecinHome',function(){
-    return view('home');
+    return view('medecinDash');
   });
   Route::get('medecinListRDV',function(){
     return view('medecinListRDV');
