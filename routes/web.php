@@ -27,3 +27,7 @@ Route::get('/home_labo', function () {
 Route::get('/home_clinique', function () {
     return view('welcome')->with('teypeUser','clinique');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
