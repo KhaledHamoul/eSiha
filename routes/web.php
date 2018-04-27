@@ -14,3 +14,16 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/home_medecin', function () {
+    return view('welcome')->with('teypeUser','medecin');
+});
+
+Route::get('/home_labo', function () {
+    return view('welcome')->with('teypeUser','labo');
+});
+
+Route::get('/home_clinique', function () {
+    return view('welcome')->with('teypeUser','clinique');
+});
