@@ -50,5 +50,5 @@
   </div>
 
   @include('layout.modals.nouvelleConsultationMedecin')
-
+  
 @endsection

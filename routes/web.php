@@ -73,7 +73,7 @@ Route::get('/labo_patients', function () {
 });
 
 Route::get('/labo_messagerie', function () {
-    return view('layout.labo_patients');
+    return view('layout.labo_messagerie');
 });
 
 Route::get('medecinDash',function(){
@@ -86,3 +86,7 @@ Route::get('medecinDash',function(){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/medecin_messagerie', function () {
+    return view('layout.medecin_messagerie');
+});

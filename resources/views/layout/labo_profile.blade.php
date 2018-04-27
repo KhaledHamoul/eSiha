@@ -1,5 +1,6 @@
-@include('layout.top')
 @include('layout.header')
+@include('layout.top')
+
 @include('layout.aside_menu_labo')
 
   <!-- Page wrapper  -->
@@ -31,7 +32,7 @@
                                         </div>
                                     </header>
 
-                                    <h3>Allison Walker</h3>
+                                    <h3>Laboratoire eSiha</h3>
                                     <div class="desc">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit et cupiditate deleniti.
                                     </div>

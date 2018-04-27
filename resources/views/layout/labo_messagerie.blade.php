@@ -1,5 +1,6 @@
-@include('layout.top')
 @include('layout.header')
+@include('layout.top')
+
 @include('layout.aside_menu_labo')
 
   <!-- Page wrapper  -->
@@ -13,91 +14,67 @@
             <!-- End Bread crumb -->
             <!-- Container fluid  -->
             <div class="container-fluid">
-            <div class="row">
-					
-						<div class="col-lg-12">
-							<div class="card">
-								<div class="card-title">
-									<h2>En attente </h2>
-									<br>
-								</div>
-								<div class="recent-comment">
-									<div class="media">
-										<div class="media-left">
-											<a href="#"><img alt="..." src="images/avatar/1.jpg" class="media-object"></a>
-										</div>
-										<div class="media-body">
-											<h4 class="media-heading">HAMOUL Khaled</h4>
-											<p>Je veux faire un radio sur le dos. </p>
-											<p class="comment-date">October 21, 2018</p>
-                                            <button type="button" class="pull-right btn btn-dark btn-outline btn-rounded m-b-10 m-l-5">Consulter</button>
-										</div>
-									</div>
-									<div class="media">
-										<div class="media-left">
-											<a href="#"><img alt="..." src="images/avatar/1.jpg" class="media-object"></a>
-										</div>
-										<div class="media-body">
-											<h4 class="media-heading">BATOUCHE Oussama</h4>
-											<p>Je veux prendre un rendez-vous pour un bilan general. </p>
-											<p class="comment-date">October 18, 2018</p>
-                                            <button type="button" class="pull-right btn btn-dark btn-outline btn-rounded m-b-10 m-l-5">Consulter</button>
-										</div>
-									</div>
+                    <div class="row">
 
-                                    <br><br>
-                                    <div class="card-title">
-									   <h2>Pris en charge </h2>
-									   <br>
-								    </div>
-
-									<div class="media">
-										<div class="media-left">
-											<a href="#"><img alt="..." src="images/avatar/1.jpg" class="media-object"></a>
-										</div>
-										<div class="media-body">
-											<h4 class="media-heading">OUMELLAL Abdessalam</h4>
-											<p>Prise de rendez-vous pour un radio . </p>
-											<p class="comment-date">October 05, 2018</p>
-                                            <button type="button" class="pull-right btn btn-dark btn-outline btn-rounded m-b-10 m-l-5">Consulter</button>
-										</div>
-									</div>
+                   
+                    <!-- /# column -->
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-title">
+                                <h2>Non lus</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="recent-meaasge">
                                     <div class="media">
-										<div class="media-left">
-											<a href="#"><img alt="..." src="images/avatar/1.jpg" class="media-object"></a>
-										</div>
-										<div class="media-body">
-											<h4 class="media-heading">KERFAH Issam</h4>
-											<p>Prise de rendez-vous pour un radio . </p>
-											<p class="comment-date">Septembre 14, 2018</p>
-                                            <button type="button" class="pull-right btn btn-dark btn-outline btn-rounded m-b-10 m-l-5">Consulter</button>
-										</div>
-									</div>
+                                        <div class="media-left">
+                                            <a href="#"><img alt="..." src="images/avatar/1.jpg" class="media-object"></a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">BATOUCHE Oussama</h4>
+                                            <div class="meaasge-date">15 minutes Ago</div>
+                                            <p class="f-s-12">We are happy about your service </p>
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#"><img alt="..." src="images/avatar/2.jpg" class="media-object"></a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">KERFAH Issam</h4>
+                                            <div class="meaasge-date">40 minutes ago</div>
+                                            <p class="f-s-12">Quick service and good serve </p>
+                                        </div>
+                                    </div>
                                     <div class="media no-border">
-										<div class="media-left">
-											<a href="#"><img alt="..." src="images/avatar/1.jpg" class="media-object"></a>
-										</div>
-										<div class="media-body">
-											<h4 class="media-heading">GUERRAS Mohamed Amine</h4>
-											<p>Prise de rendez-vous pour un radio sur le pied  . </p>
-											<p class="comment-date">Septembre 10, 2018</p>
-                                            <button type="button" class="pull-right btn btn-dark btn-outline btn-rounded m-b-10 m-l-5">Consulter</button>
-                                            
-										</div>
-									</div>
+                                        <div class="media-left">
+                                            <a href="#"><img alt="..." src="images/avatar/3.jpg" class="media-object"></a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">GUEURRAS Mohamed</h4>
+                                            <div class="meaasge-date">1 minutes ago</div>
+                                            <p class="f-s-12">We like your birthday cake </p>
+                                        </div>
+                                    </div>
 
-									
-								</div>
-							</div>
-							<!-- /# card -->
-						</div>
-						<!-- /# column -->
-					
-
-
-					
-
-				 
+                                    <br>
+                                    <div class="card-title">
+                                <h2>lus</h2>
+                            </div>
+                                    <div class="media no-border">
+                                        <div class="media-left">
+                                            <a href="#"><img alt="..." src="images/avatar/2.jpg" class="media-object"></a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">CHOHRA Mohamed</h4>
+                                            <div class="meaasge-date">40 minutes ago</div>
+                                            <p class="f-s-12">Quick service and good serve </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
 
                 </div>
             </div>
