@@ -18,21 +18,21 @@
                                                     <td>Kamel</td>
                                                     <td>34929</td>
                                                     <td>33</td>
-                                                    <td><a  style="color:white" class="btn btn-info"><i class="fa fa-user-md"></i></a> <a class="btn btn-warning"><i style="color:white" class="fa fa-pencil"></i></a>  <a  style="color:white" class="btn btn-danger"><i class="fa fa-trash"></i></a></td>
+                                                    <td><a data-toggle="modal" data-target="#nouvelleCons" style="color:white" class="btn btn-info"><i class="fa fa-user-md"></i></a> <a class="btn btn-warning"><i style="color:white" class="fa fa-pencil"></i></a>  <a  style="color:white" class="btn btn-danger"><i class="fa fa-trash"></i></a></td>
                                             </tr>
                                             <tr role="row" class="even">
                                               <td class="sorting_1">MEZIANI</td>
                                               <td>Sofiane</td>
                                               <td>76831</td>
                                               <td>21</td>
-                                              <td><a  style="color:white" class="btn btn-info"><i class="fa fa-user-md"></i></a> <a class="btn btn-warning"><i style="color:white" class="fa fa-pencil"></i></a>  <a  style="color:white" class="btn btn-danger"><i class="fa fa-trash"></i></a></td>
+                                              <td><a data-toggle="modal" data-target="#nouvelleCons" style="color:white" class="btn btn-info"><i class="fa fa-user-md"></i></a> <a class="btn btn-warning"><i style="color:white" class="fa fa-pencil"></i></a>  <a  style="color:white" class="btn btn-danger"><i class="fa fa-trash"></i></a></td>
                                             </tr>
                                             <tr role="row" class="odd">
                                                     <td class="sorting_1">SALMAN</td>
                                                     <td>Fayçal</td>
                                                     <td>54678</td>
                                                     <td>23</td>
-                                                    <td><a  style="color:white" class="btn btn-info"><i class="fa fa-user-md"></i></a> <a class="btn btn-warning"><i style="color:white"  class="fa fa-pencil"></i></a>  <a  style="color:white" class="btn btn-danger"><i class="fa fa-trash"></i></a></td>
+                                                    <td><a data-toggle="modal" data-target="#nouvelleCons"  style="color:white" class="btn btn-info"><i class="fa fa-user-md"></i></a> <a class="btn btn-warning"><i style="color:white"  class="fa fa-pencil"></i></a>  <a  style="color:white" class="btn btn-danger"><i class="fa fa-trash"></i></a></td>
                                             </tr>
                                             <tr role="row" class="even">
                                               <td class="sorting_1">DERARDJA</td>
@@ -48,7 +48,7 @@
     </div>
 
   </div>
-  
+
   @include('layout.modals.nouvelleConsultationMedecin')
 
 @endsection
