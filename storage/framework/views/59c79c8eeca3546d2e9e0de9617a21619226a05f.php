@@ -7,7 +7,7 @@
       </div>
       <div class="modal-body">
         <form method="post" action="createProspect">
-          @csrf
+          <?php echo csrf_field(); ?>
 
          <h4>Informations de patient</h4>
          <span><b>Date de naissance :</b> 12-07-1996</span> <span>Age : <b>22 ans</b></span> <span>Groupe sangun : <b>A+</b></span>

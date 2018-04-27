@@ -57,8 +57,6 @@
     <script src="js/lib/calendar-2/pignose.calendar.min.js"></script>
     <!-- scripit init-->
     <script src="js/lib/calendar-2/pignose.init.js"></script>
-    <!-- script of the modal -->
-    <script src="js/modal_script.js"></script>
 
 </body>
 
