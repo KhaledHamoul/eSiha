@@ -1,6 +1,6 @@
 @include('layout.header')
 
-  
+
 
 @include('layout.top')
 
@@ -14,19 +14,19 @@
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
                     <h3 class="text-primary">Analyses / Radios</h3> </div>
-              
+
             </div>
             <!-- End Bread crumb -->
   <div class="container-fluid">
                 <!-- Start Page Content -->
                 <div class="row">
-                   <div class="col-12"> 
+                   <div class="col-12">
             <div class="card ">
                             <div class="card-body">
-                                
-                                
+
+
                                 <div class="table-responsive m-t-40">
-                                    
+
                                     <table id="myTable" class="table table-bordered table-striped dataTable " role="grid" aria-describedby="myTable_info">
                                         <thead>
                                             <tr role="row">
@@ -39,7 +39,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                         
+
                                         <tr role="row" class="odd">
                                                 <td class="sorting_1">OUMELLAL Abdessalam</td>
                                                 <td>RADIO</td>
@@ -53,7 +53,7 @@
                                                 <td>Boumerdess</td>
                                                 <td>2009/10/09</td>
                                                 <td>Tete</td>
-                                                <td><button type="button" style="margin-right:20%;" class="btn btn-success">RESULTAT</button></td>                                                
+                                                <td><button type="button" style="margin-right:20%;" class="btn btn-success">RESULTAT</button></td>
                                             </tr><tr role="row" class="odd">
                                                 <td class="sorting_1">GUERRAS Mohamed</td>
                                                 <td>ANALYSES</td>
@@ -106,7 +106,7 @@
                                             </tr><tr role="row" class="even">
                                                 <td class="sorting_1">CHOHRA Mohamed</td>
                                                 <td>RADIO</td>
-                                                <td>Ouaregla</td>  
+                                                <td>Ouaregla</td>
                                                 <td>2012/03/29</td>
                                                 <td>Cous</td>
                                                 <td><button type="button" style="margin-right:20%;" class="btn btn-success">RESULTAT</button></td>
@@ -114,66 +114,25 @@
                                     </table>
                                <br><br>
                                     </div>
-                               
-                        
+
+
 
 
 <!-- MODAL -->
-                             
+
 <div class="container">
   <!-- Trigger the modal with a button -->
   <button  type="button" class="btn btn-dark btn-outline m-b-10 m-l-5 pull-right" data-toggle="modal"  data-target="#myModal">+ Analyse / Radio</button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" onclick="removeDiv()" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-  
-</div>
-
-     </div>     
-          </div>
-                            </div>
-        </div>
-         </div>
-          </div>
-          </div>
-        <!-- End Page wrapper  -->
-
-
-<script>
-
-removeDiv = function () {
-   $('.modal-backdrop').remove();
-    //alert('kjfd');
-}
-
-</script>
+@include('layout.modals.nouvelleAnalyse')
 
 
 
 
 
 
-   
 
-        
+
+
 @include('layout.footer')
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
