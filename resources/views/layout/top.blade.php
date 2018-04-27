@@ -29,4 +29,4 @@
 <![endif]-->
 </head>
 
-<body class="fix-header fix-sidebar">
+<body class="fix-header fix-sidebar">   
