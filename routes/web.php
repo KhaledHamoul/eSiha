@@ -19,6 +19,10 @@ Route::get('/', function () {
 Route::get('/home_medecin', function () {
     return view('welcome')->with('teypeUser','medecin');
 });
+Route::get('/medecin_page_content', function () {
+    return view('welcome')->with('teypeUser','medecin');
+});
+
 
 Route::get('/home_labo', function () {
     return view('welcome')->with('teypeUser','labo');
