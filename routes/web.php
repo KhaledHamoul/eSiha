@@ -52,6 +52,30 @@ Route::get('/home_clinique', function () {
 });
 
 
+Route::get('/labo_profile', function () {
+    return view('layout.labo_profile');
+});
+
+Route::get('/labo_settings', function () {
+    return view('layout.labo_profile_settings');
+});
+
+Route::get('/labo_rendez_vous', function () {
+    return view('layout.labo_rendez_vous');
+});
+
+Route::get('/labo_analyse_radio', function () {
+    return view('layout.labo_analyse_radio');
+});
+
+Route::get('/labo_patients', function () {
+    return view('layout.labo_patients');
+});
+
+Route::get('/labo_messagerie', function () {
+    return view('layout.labo_patients');
+});
+
 
 Auth::routes();
 

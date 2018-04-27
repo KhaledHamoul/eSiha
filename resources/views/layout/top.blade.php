@@ -31,6 +31,9 @@
                   <!-- User profile and search -->
                   <ul class="navbar-nav my-lg-0">
 
+
+<body class="fix-header fix-sidebar">   
+
                       <!-- Search -->
                       <li class="nav-item hidden-sm-down search-box"> <a class="nav-link hidden-sm-down text-muted  " href="javascript:void(0)"><i class="ti-search"></i></a>
                           <form class="app-search">
