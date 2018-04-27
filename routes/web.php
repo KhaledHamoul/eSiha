@@ -40,7 +40,9 @@ Route::get('/medecin_profile_page', function () {
     return view('layout/medecin_profile_page');
 });
 
-
+Route::get('/medecinHistory', function () {
+    return view('medecinHistory');
+});
 Route::get('/home_labo', function () {
     return view('welcome')->with('typeUser','labo');
 });
