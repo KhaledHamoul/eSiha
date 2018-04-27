@@ -76,6 +76,12 @@ Route::get('/labo_messagerie', function () {
     return view('layout.labo_messagerie');
 });
 
+Route::get('medecinDash',function(){
+    return view('medecinDash');
+  });
+  Route::get('medecinProfile',function(){
+    return view('medecinProfile');
+  });
 
 Auth::routes();
 
