@@ -1,5 +1,5 @@
-@include('layout.top')
 @include('layout.header')
+@include('layout.top')
 
 
 @if($typeUser == "medecin")

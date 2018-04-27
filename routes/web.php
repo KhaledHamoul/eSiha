@@ -73,7 +73,7 @@ Route::get('/labo_patients', function () {
 });
 
 Route::get('/labo_messagerie', function () {
-    return view('layout.labo_patients');
+    return view('layout.labo_messagerie');
 });
 
 
