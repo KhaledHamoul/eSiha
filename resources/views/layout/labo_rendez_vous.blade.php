@@ -107,5 +107,6 @@
         </div>
         <!-- End Page wrapper  -->
 
-        
+@include('layout.modals.nouvelleAnalyse')
+     
 @include('layout.footer')
