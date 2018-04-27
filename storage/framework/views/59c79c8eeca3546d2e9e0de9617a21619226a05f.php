@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 
 <!-- MODAL -->
 
@@ -65,8 +64,6 @@
 </div>
 
 
-=======
->>>>>>> aab650594ea479d6b39510ed549e8a21046fd4de
 <div class="modal fade" id="nouvelleCons">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -95,6 +92,7 @@
            <input type="text" name="" value="" placeholder="Object">
          </div>
          <div class="col-md-6">
+           
              <label for="">Remarque & Description</label>
              <textarea class="form-control" placeholder=". . ." name="description" style="height: 154px;" required></textarea>
          </div>
