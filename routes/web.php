@@ -17,7 +17,7 @@
    return view('medecinListPatients');
   });
   Route::get('medecinHome',function(){
-    return view('medecinDash');
+    return view('home');
   });
   Route::get('medecinListRDV',function(){
     return view('medecinListRDV');
@@ -76,6 +76,12 @@ Route::get('/labo_messagerie', function () {
     return view('layout.labo_patients');
 });
 
+Route::get('medecinDash',function(){
+    return view('medecinDash');
+  });
+  Route::get('medecinProfile',function(){
+    return view('medecinProfile');
+  });
 
 Auth::routes();
 
