@@ -108,6 +108,12 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
+                                                <label class="col-md-12">Position sur la map</label>
+                                                <div class="col-md-12">
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" width="100%" height="200" frameborder="0" style="border:0"></iframe>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
                                                 <label class="col-md-12">Numéro téléphone cabinet</label>
                                                 <div class="col-md-12">
                                                     <input type="text"  class="form-control form-control-line">
@@ -129,16 +135,6 @@
                                                     <input type="checkbox">Jeudi <br>
                                                     <input type="checkbox">Vendredi <br>
                                                     <input type="checkbox">Samedi<br>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-12">Heures de disponibilité</label>
-                                                <div class="col-sm-12">
-                                                    <input type="checkbox">08:00-12:00 <br>
-                                                    <input type="checkbox">13:00-16:00 <br>
-                                                    <input type="checkbox">16:00-20:00 <br>
-                                                    <input type="checkbox">Après 20:00 <br>
-                                                   
                                                 </div>
                                             </div>
                                             <div class="form-group">
