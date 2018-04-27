@@ -1,69 +1,66 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+  <body class="fix-header fix-sidebar">
+      <!-- Preloader - style you can find in spinners.css -->
+      <div class="preloader">
+          <svg class="circular" viewBox="25 25 50 50">
+  			<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+      </div>
+      <!-- Main wrapper  -->
+      <div id="main-wrapper">
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
-                        @csrf
+          <div class="unix-login">
+              <div class="container-fluid">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-4">
+                          <div class="login-content card">
+                              <div class="login-form">
+                                  <h4>Connecter</h4>
+                                  <form>
+                                      <div class="form-group">
+                                          <label>Adresse Email</label>
+                                          <input type="email" class="form-control" placeholder="Ex : ossama12batouche@gmail.com">
+                                      </div>
+                                      <div class="form-group">
+                                          <label>Mot de passe</label>
+                                          <input type="password" class="form-control" placeholder=" * * * * * * ">
+                                      </div>
+                                      <div class="checkbox">
+                                          <label>
+          										<input type="checkbox"> Souvien de moi
+          									</label>
+                                          <label class="pull-right">
+          										<a href="#">Mot de passe oublié ?</a>
+          									</label>
 
-                        <div class="form-group row">
-                            <label for="email" class="col-sm-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                                      </div>
+                                      <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Connecter</button>
+                                      <div class="register-link m-t-15 text-center">
+                                          <p>Ne pas avoir de compte ? <a href="#"> Inscrivez-vous ici</a></p>
+                                      </div>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
+      </div>
+      <!-- End Wrapper -->
+      <!-- All Jquery -->
+      <script src="js/lib/jquery/jquery.min.js"></script>
+      <!-- Bootstrap tether Core JavaScript -->
+      <script src="js/lib/bootstrap/js/popper.min.js"></script>
+      <script src="js/lib/bootstrap/js/bootstrap.min.js"></script>
+      <!-- slimscrollbar scrollbar JavaScript -->
+      <script src="js/jquery.slimscroll.js"></script>
+      <!--Menu sidebar -->
+      <script src="js/sidebarmenu.js"></script>
+      <!--stickey kit -->
+      <script src="js/lib/sticky-kit-master/dist/sticky-kit.min.js"></script>
+      <!--Custom JavaScript -->
+      <script src="js/custom.min.js"></script>
 
-                                @if ($errors->has('email'))
-                                    <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> {{ __('Remember Me') }}
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
-                                </button>
-
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    {{ __('Forgot Your Password?') }}
-                                </a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 @endsection
