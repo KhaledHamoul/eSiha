@@ -37,7 +37,7 @@ Route::get('/medecin_page_content', function () {
     return view('welcome')->with('teypeUser','medecin-dash');
 });
 Route::get('/medecin_profile_page', function () {
-    return view('welcome')->with('teypeUser','medecin-profile');;
+    return view('layout/medecin_profile_page');
 });
 
 

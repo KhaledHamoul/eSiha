@@ -1,5 +1,9 @@
+  @extends('medecinHome')
+  @section('content')
+
   <!-- Page wrapper  -->
   <div class="page-wrapper">
+
             <!-- Bread crumb -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
@@ -276,3 +280,4 @@
       </div>
 
     <!-- End Wrapper -->
+    @endsection
