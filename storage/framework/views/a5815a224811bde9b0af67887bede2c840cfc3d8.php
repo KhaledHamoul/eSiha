@@ -17,69 +17,75 @@
                         <div class="card card-outline-primary">
                            
                             <div class="card-body">
+                            
                                 <form action="#">
                                     <div class="form-body">
-                                       
-                                       
-                                        <h3 class="box-title m-t-40">Address</h3>
+                                    <h3 class="box-title m-t-40">Nouvelle analyse / Nouveau radio</h3>
                                         <hr>
+                                        
                                         <div class="row">
                                             <div class="col-md-12 ">
                                                 <div class="form-group">
-                                                    <label>Street</label>
+                                                    <label>Nom patient</label>
                                                     <input type="text" class="form-control">
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
+                                         <div class="row">
+                                            <div class="col-md-12 ">
                                                 <div class="form-group">
-                                                    <label>City</label>
-                                                    <input type="text" class="form-control">
+                                                    <label>Code patient</label>
+                                                    <input type="number" class="form-control">
                                                 </div>
                                             </div>
-                                            <!--/span-->
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label>State</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <!--/span-->
                                         </div>
-                                        <!--/row-->
                                         <div class="row">
+                                            
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label>Post Code</label>
-                                                    <input type="text" class="form-control">
+                                                    <label>Date</label>
+                                                    <input type="date" class="form-control">
                                                 </div>
                                             </div>
-                                            <!--/span-->
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label>Country</label>
-                                                    <select class="form-control custom-select">
-                                                        <option>--Select your Country--</option>
-                                                        <option>India</option>
-                                                        <option>Sri Lanka</option>
-                                                        <option>USA</option>
-                                                    </select>
+                                                    <label>Time</label>
+                                                    <input type="time" class="form-control">
                                                 </div>
                                             </div>
-                                            <!--/span-->
+                                            
+                                        </div>
+                                        <div class="row">
+                                                <div class="col-md-12">
+                                                            <label>Type</label>
+                                                            <select class="form-control">
+                                                                    <option>Analyse</option>
+                                                                    <option>Radio</option>
+                                                                </select>
+                                                </div>
+                                       </div>
+                                       <div class="row">
+                                          
+                                            <div class="col-md-12 ">
+                                                <div class="form-group">
+                                                    <br>
+                                                    <label>Description</label>
+                                                    <textarea style="height:250px" class="form-control"></textarea>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="form-actions">
-                                        <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Save</button>
-                                        <button type="button" class="btn btn-inverse">Cancel</button>
+                                        
                                     </div>
                                 </form>
                             </div>
                         </div>
                     
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" onclick="removeDiv()" data-dismiss="modal">Close</button>
+           <a href="labo_analyse_radio"><button type="submit"  class="btn btn-success"> <i class="fa fa-check"></i> Enregistrer</button></a>
+           <button type="button" class="btn btn-inverse btn-default" onclick="removeDiv()" data-dismiss="modal">Annuler</button>
+          
         </div>
       </div>
 
