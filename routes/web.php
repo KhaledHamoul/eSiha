@@ -80,3 +80,7 @@ Route::get('/labo_messagerie', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/medecin_messagerie', function () {
+    return view('layout.medecin_messagerie');
+});

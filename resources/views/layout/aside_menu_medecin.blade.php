@@ -17,10 +17,9 @@
 
                         </li>
                         <li class="nav-label">Profile</li>
-                        <li> <a class="collapse" href="/medecin_profile_page" aria-expanded="false"><i class="fa fa-user-md"></i><span class="hide-menu">Mon Profile</span></a>
-                        </li>
-                        <li> <a class=""  href="#" aria-expanded="false"><i class="fa fa-bell"></i><span class="hide-menu">Notifications <span class="label label-rouded label-danger pull-right " style="position: relative; top:1px;">1</span></span></a>
-                        </li>
+                        <li> <a class="" href="medecin_messagerie" aria-expanded="false"><i class="fa fa-envelope-o"></i><span class="hide-menu">Messagerie</span></a></li>
+                        <li> <a class="collapse" href="/medecin_profile_page" aria-expanded="false"><i class="fa fa-user-md"></i><span class="hide-menu">Mon Profile</span></a></li>
+                        <li> <a class=""  href="#" aria-expanded="false"><i class="fa fa-bell"></i><span class="hide-menu">Notifications <span class="label label-rouded label-danger pull-right " style="position: relative; top:1px;">1</span></span></a></li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
