@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 
 <!-- MODAL -->
 
@@ -64,6 +65,8 @@
 </div>
 
 
+=======
+>>>>>>> aab650594ea479d6b39510ed549e8a21046fd4de
 <div class="modal fade" id="nouvelleCons">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -75,11 +78,11 @@
           <?php echo csrf_field(); ?>
 
          <h4>Informations de patient</h4>
-         <span class="form-control"><b>Date de naissance :</b> 12-07-1996</span> <span class="form-control">Age : <b>22 ans</b></span> <span class="form-control">Groupe sangun : <b>A+</b></span>
+         <span><b>Date de naissance :</b> 12-07-1996</span> <span>Age : <b>22 ans</b></span> <span>Groupe sangun : <b>A+</b></span>
          <span><b>Situation familiale  :</b> Cilibatere</span> <span>Numero deSecurite social : <b>01993434543535345</b></span> <span>Profession : <b>Etudiant</b></span>
          <h4>Informations de Consultation</h4>
          <div class="form-group">
-           <input class="form-control" type="date" name="" value="">
+           <input type="date" name="" value="">
          </div>
          <div class="form-group">
            <select class="form-control" name="idGrp" required>
@@ -89,27 +92,18 @@
            </select>
          </div>
          <div class="form-group">
-           <input class="form-control" type="text" name="" value="" placeholder="Object">
+           <input type="text" name="" value="" placeholder="Object">
          </div>
-         <div class="form-group">
+         <div class="col-md-6">
              <label for="">Remarque & Description</label>
              <textarea class="form-control" placeholder=". . ." name="description" style="height: 154px;" required></textarea>
          </div>
 
       </div>
       <div class="modal-footer">
-        <button class="btn btn-danger" data-dismiss="modal" onclick="hideFade()">Fermer</button>
+        <button class="btn btn-danger" data-dismiss="modal">Fermer</button>
         <input class="btn btn-success" type="submit" value="Ajouter"></form>
       </div>
     </div>
   </div>
 </div>
-
-<script>
-
-removeDiv = function () {
-   $('.modal-backdrop').remove();
-    //alert('kjfd');
-}
-
-</script>
