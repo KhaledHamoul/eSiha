@@ -28,14 +28,14 @@
                                       </div>
                                       <div class="checkbox">
                                           <label>
-          										<input type="checkbox"> Souvien de moi
-          									</label>
-                                          <label class="pull-right">
-          										<a href="#">Mot de passe oublié ?</a>
-          									</label>
+                    										<input type="checkbox"> Souvien de moi
+                    									</label>
+                                      <label class="pull-right">
+                    										<a href="#">Mot de passe oublié ?</a>
+                    									</label>
 
                                       </div>
-                                      <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Connecter</button>
+                                      <a href="{{url('medecinHome')}}" class="btn btn-primary btn-flat m-b-30 m-t-30" >Connecter</a>
                                       <div class="register-link m-t-15 text-center">
                                           <p>Ne pas avoir de compte ? <a href="#"> Inscrivez-vous ici</a></p>
                                       </div>
