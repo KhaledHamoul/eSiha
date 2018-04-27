@@ -3,6 +3,7 @@
 
 @if($teypeUser == "medecin")
  @include('layout.aside_menu_medecin')
+ 
 @elseif($teypeUser == "labo")
   @include('layout.aside_menu_labo')
   @include('layout.labo_page_content')

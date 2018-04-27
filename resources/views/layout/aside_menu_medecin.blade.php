@@ -7,7 +7,7 @@
                     <ul id="sidebarnav">
                         <li class="nav-devider"></li>
                         <li class="nav-label">Accueil</li>
-                        <li> <a class="collapse " href="#" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Tableau de bord </span></a>
+                        <li> <a class="collapse " href="" aria-expanded="false"><i class="fa fa-tachometer"></i><span class="hide-menu">Tableau de bord </span></a>
                         </li>
                         <li class="nav-label">Profile</li>
                         <li> <a class="collapse" href="#" aria-expanded="false"><i class="fa fa-user-md"></i><span class="hide-menu">Mon Profile</span></a>
@@ -32,4 +32,4 @@
             </div>
             <!-- End Sidebar scroll-->
         </div>
-        <!-- End Left Sidebar  -->
+       
