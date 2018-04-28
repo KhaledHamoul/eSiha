@@ -79,7 +79,7 @@
                         </div>
 
         <div class="modal-footer">
-           <a ><button type="submit" onclick="saveAnalyseRadio()"  class="btn btn-success"> <i class="fa fa-check"></i> Confirmer</button></a>
+           <a ><button type="submit" id="cnf"  class="btn btn-success"> <i class="fa fa-check"></i> Confirmer</button></a>
            <button type="button" class="btn btn-inverse btn-default" onclick="removeDiv()" data-dismiss="modal">Annuler</button>
 
         </div>
@@ -115,19 +115,19 @@ var config = {
 
   // Get a reference to the database service
   var database = firebase.database();
-  var ref = database.ref('RDV_Labo');
+  var ref = database.ref(`RDV_Labo`);
 
 removeDiv = function () {
-   $('.modal-backdrop').remove();
-    //alert('kjfd');
+   $(`.modal-backdrop`).remove();
+    //alert(`kjfd`);
 }
 
 
 
 
 
-  var lu = document.getElementById('lu');
-  var nonlu = document.getElementById('nonlu');
+  var lu = document.getElementById(`lu`);
+  var nonlu = document.getElementById(`nonlu`);
      // Initialize Firebase
 
 
@@ -135,7 +135,7 @@ removeDiv = function () {
 
   var trt = "";
   var trf = "";
-  ref.on('value', function(snapshot) {
+  ref.on(`value`, function(snapshot) {
 
 	  var child;
 
@@ -144,30 +144,30 @@ removeDiv = function () {
          child = childSnapshot.val();
 
          if (child.confirmed == false ){
-			 	 trt += '<div class="media"><div class="media-left"><a href="#"><img alt="..." src="images/user.png" style="width:15%" class="media-object"></a></div><div class="media-body"><h4 class="media-heading">'+child.nomPatient+'</h4><p>'+child.details+'</p><p class="comment-date">'+child.date + "  " + child.time+'</p><button onClick="consulter('+child.codePatient+",'"+ child.nomPatient+"','"+child.type+ "','"+child.details+ "','"+child.date+"','"+child.time+"',"+child.confirmed+')" data-toggle="modal"  data-target="#myModal" type="button" class="pull-right btn btn-dark btn-outline btn-rounded m-b-10 m-l-5">Consulter</button>	</div>	</div>';
+			 	 trt += `<div class="media"><div class="media-left"><a href="#"><img alt="..." src="images/user.png" style="width:15%" class="media-object"></a></div><div class="media-body"><h4 class="media-heading">`+child.nomPatient+`</h4><p>`+child.details+`</p><p class="comment-date">`+child.date + "  " + child.time+`</p><button onClick="consulter(this,`+child.codePatient+",`"+ child.nomPatient+"`,`"+child.type+ "`,`"+child.details+ "`,`"+child.date+"`,`"+child.time+"`,"+child.confirmed+`)" data-toggle="modal" id="'`+childSnapshot.key+`'"  data-target="#myModal" type="button" class="pull-right btn btn-dark btn-outline btn-rounded m-b-10 m-l-5">Consulter</button>	</div>	</div>`;
 
-		 }
+		     }
           else  {
-			  trf += '<div class="media"><div class="media-left"><a href="#"><img alt="..." src="images/user.png" style="width:15%" class="media-object"></a></div><div class="media-body"><h4 class="media-heading">'+child.nomPatient+'</h4><p>'+child.details+'</p><p class="comment-date">'+child.date + "  " + child.time+'</p><button onClick="consulter('+child.codePatient+",'"+ child.nomPatient+"','"+child.type+ "','"+child.details+ "','"+child.date+"','"+child.time+"',"+child.confirmed+')" data-toggle="modal"  data-target="#myModal" type="button" class="pull-right btn btn-dark btn-outline btn-rounded m-b-10 m-l-5">Consulter</button>	</div>	</div>';
+			  trf += `<div class="media"><div class="media-left"><a href="#"><img alt="..." src="images/user.png" style="width:15%" class="media-object"></a></div><div class="media-body"><h4 class="media-heading">`+child.nomPatient+`</h4><p>`+child.details+`</p><p class="comment-date">`+child.date + "  " + child.time+`</p><button onClick="consulter(this,`+child.codePatient+",`"+ child.nomPatient+"`,`"+child.type+ "`,`"+child.details+ "`,`"+child.date+"`,`"+child.time+"`,"+child.confirmed+`)"data-toggle="modal" id="`+childSnapshot.key+`"  data-target="#myModal" type="button" class="pull-right btn btn-dark btn-outline btn-rounded m-b-10 m-l-5">Consulter</button>	</div>	</div>`;
 
-		  }
+		      }
         });
 
-		lu.innerHTML = trt;
-        nonlu.innerHTML = trf;
+		      lu.innerHTML = trt;
+          nonlu.innerHTML = trf;
 
 
       });
 
 
-       var nom = document.getElementById('nom');
-       var code = document.getElementById('code');
-       var date = document.getElementById('date');
-       var time = document.getElementById('time');
-       var type = document.getElementById('type');
-       var desc = document.getElementById('desc');
-
-	   function  consulter(c,n,t,d,dateE,timeE,confirmed){
+       var nom = document.getElementById(`nom`);
+       var code = document.getElementById(`code`);
+       var date = document.getElementById(`date`);
+       var time = document.getElementById(`time`);
+       var type = document.getElementById(`type`);
+       var desc = document.getElementById(`desc`);
+       var key;
+	   function  consulter(obj,c,n,t,d,dateE,timeE,confirmed){
 
                 code.innerHTML = c ;
                 nom.innerHTML = n;
@@ -193,12 +193,18 @@ removeDiv = function () {
 
                 type.innerHTML = t;
                 desc.innerHTML = d;
+                key = obj.id;
 
 
       }
 
 
 
+
+           confirmRDV = function(){
+                  database.ref(`RDV_Labo/` + key).update({confirmed: true});
+
+           }
 
 
 
