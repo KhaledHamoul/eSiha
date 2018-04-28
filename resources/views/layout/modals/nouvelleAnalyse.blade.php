@@ -27,7 +27,7 @@
                                             <div class="col-md-12 ">
                                                 <div class="form-group">
                                                     <label>Nom patient</label>
-                                                    <input type="text" class="form-control">
+                                                    <input id="nom" type="text" class="form-control">
                                                 </div>
                                             </div>
                                         </div>
@@ -35,7 +35,7 @@
                                             <div class="col-md-12 ">
                                                 <div class="form-group">
                                                     <label>Code patient</label>
-                                                    <input type="number" class="form-control">
+                                                    <input id="code" type="number" class="form-control">
                                                 </div>
                                             </div>
                                         </div>
@@ -44,13 +44,13 @@
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label>Date</label>
-                                                    <input type="date" class="form-control">
+                                                    <input id="date" type="date" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label>Time</label>
-                                                    <input type="time" class="form-control">
+                                                    <input id="time" type="time" class="form-control">
                                                 </div>
                                             </div>
                                             
@@ -58,7 +58,7 @@
                                         <div class="row">
                                                 <div class="col-md-12">
                                                             <label>Type</label>
-                                                            <select class="form-control">
+                                                            <select id="type" class="form-control">
                                                                     <option>Analyse</option>
                                                                     <option>Radio</option>
                                                                 </select>
@@ -70,7 +70,15 @@
                                                 <div class="form-group">
                                                     <br>
                                                     <label>Description</label>
-                                                    <textarea style="height:250px" class="form-control"></textarea>
+                                                    <textarea id="desc" style="height:150px" class="form-control"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         <div class="row">
+                                            <div class="col-md-12 ">
+                                                <div class="form-group">
+                                                    <label>Resultat d'analyse / radio</label>
+                                                    <input id="file" type="file" class="form-control">
                                                 </div>
                                             </div>
                                         </div>
@@ -83,7 +91,7 @@
                         </div>
                     
         <div class="modal-footer">
-           <a href="labo_analyse_radio"><button type="submit"  class="btn btn-success"> <i class="fa fa-check"></i> Enregistrer</button></a>
+           <a ><button type="submit" onclick="saveAnalyseRadio()"  class="btn btn-success"> <i class="fa fa-check"></i> Enregistrer</button></a>
            <button type="button" class="btn btn-inverse btn-default" onclick="removeDiv()" data-dismiss="modal">Annuler</button>
           
         </div>
@@ -102,6 +110,7 @@
           </div>
           </div>
         <!-- End Page wrapper  -->
+
 
 <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
 <script>
@@ -124,5 +133,37 @@ removeDiv = function () {
 
   // Get a reference to the database service
   var database = firebase.database();
+  
+       var nom = document.getElementById('nom');
+       var code = document.getElementById('code');
+       var date = document.getElementById('date');
+       var time = document.getElementById('time');
+       var type = document.getElementById('type');
+       var desc = document.getElementById('desc');
+       var key ;
+   
+   function saveAnalyseRadio(){
+        key = firebase.database().ref('Rapports').push().key;
+         
+                         
+            const ref = firebase.storage().ref('rapports/');
+            const file = $('#file').get(0).files[0];
+            const fname = (+new Date()) + '-' + file.name;
+            const metadata = { contentType: file.type };
+            const task = ref.child(fname).put(file, metadata);
+            
+
+              database.ref('Rapports/' + key).set({
+                                nom: nom.value,
+                                code: code.value,
+                                date : date.value ,
+                                time: time.value ,
+                                type: type.value ,
+                                description: desc.value ,
+                                fileUrl: fname
+                            });
+
+   }
+  
 
 </script>

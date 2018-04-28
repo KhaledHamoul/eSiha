@@ -107,5 +107,6 @@
         </div>
         <!-- End Page wrapper  -->
 
-        
+<?php echo $__env->make('layout.modals.nouvelleAnalyse', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+     
 <?php echo $__env->make('layout.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
