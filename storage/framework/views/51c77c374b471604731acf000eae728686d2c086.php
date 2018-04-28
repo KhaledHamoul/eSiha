@@ -48,7 +48,7 @@
 
                     </div>
                     <div class="form-actions pull-right">
-                        <button type="submit" onclick="answerUrgence()" class="btn btn-success"> <i class="fa fa-check"></i>Accepter</button>
+                        <button type="submit" onclick="answerUrgence()" data-dismiss="modal" class="btn btn-success"> <i class="fa fa-check"></i>Accepter</button>
                         <button type="button" class="btn btn-inverse" onclick="removeDiv()" data-dismiss="modal" >Annuler</button>
                     </div>
                 </form>
@@ -90,10 +90,9 @@ removeDiv = function () {
 
 
      answerUrgence = function(){
-       
-              database.ref('Urgences/' + key).update({
-                                accepte: "-Eu5_6kEkt90u56kEu56k"
-                            });
+            //  var database = firebase.database();
+              database.ref('Urgences/' + key).update({accepte: "-Eu5_6kEkt90u56kEu56k"});
+              removeDiv();
 
      }
 
