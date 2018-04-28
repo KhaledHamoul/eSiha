@@ -32,7 +32,7 @@
                   <ul class="navbar-nav my-lg-0">
 
 
-<body class="fix-header fix-sidebar">   
+<body class="fix-header fix-sidebar">
 
                       <!-- Search -->
                       <li class="nav-item hidden-sm-down search-box"> <a class="nav-link hidden-sm-down text-muted  " href="javascript:void(0)"><i class="ti-search"></i></a>
@@ -102,7 +102,7 @@
                                           <!-- Message -->
                                           <a href="#">
                                               <div class="user-img"> <img src="images/users/5.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
-                                              <div class="mail-contnet">
+                                              <div class="mail-contnet" data-toggle="modal" data-target="#urgenceDetails">
                                                   <h5>Michael Qin</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span>
                                               </div>
                                           </a>
@@ -153,3 +153,4 @@
           </nav>
       </div>
       <!-- End header header -->
+      @include('layout.modals.urganceDetails')
