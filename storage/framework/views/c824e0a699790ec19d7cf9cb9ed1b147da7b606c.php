@@ -32,7 +32,7 @@
                   <ul class="navbar-nav my-lg-0">
 
 
-<body class="fix-header fix-sidebar">   
+<body class="fix-header fix-sidebar">
 
                       <!-- Search -->
                       <li class="nav-item hidden-sm-down search-box"> <a class="nav-link hidden-sm-down text-muted  " href="javascript:void(0)"><i class="ti-search"></i></a>
@@ -42,7 +42,7 @@
                       <!-- Comment -->
                       <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle text-muted text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bell"></i>
-                            a
+
                           <div class="dropdown-menu dropdown-menu-right mailbox animated zoomIn">
                               <ul>
                                   <li>
@@ -95,42 +95,16 @@
                           <div class="dropdown-menu dropdown-menu-right mailbox animated zoomIn" aria-labelledby="2">
                               <ul>
                                   <li>
-                                      <div class="drop-title">You have 4 new messages</div>
+                                      <div class="drop-title">Demande en urgence</div>
                                   </li>
                                   <li>
-                                      <div class="message-center">
+                                      <div class="message-center" id="listUrgences">
                                           <!-- Message -->
-                                          <a href="#">
-                                              <div class="user-img"> <img src="images/users/5.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
-                                              <div class="mail-contnet">
-                                                  <h5>Michael Qin</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span>
-                                              </div>
-                                          </a>
-                                          <!-- Message -->
-                                          <a href="#">
-                                              <div class="user-img"> <img src="images/users/2.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
-                                              <div class="mail-contnet">
-                                                  <h5>John Doe</h5> <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span>
-                                              </div>
-                                          </a>
-                                          <!-- Message -->
-                                          <a href="#">
-                                              <div class="user-img"> <img src="images/users/3.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
-                                              <div class="mail-contnet">
-                                                  <h5>Mr. John</h5> <span class="mail-desc">I am a singer!</span> <span class="time">9:08 AM</span>
-                                              </div>
-                                          </a>
-                                          <!-- Message -->
-                                          <a href="#">
-                                              <div class="user-img"> <img src="images/users/4.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
-                                              <div class="mail-contnet">
-                                                  <h5>Michael Qin</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span>
-                                              </div>
-                                          </a>
+
                                       </div>
                                   </li>
                                   <li>
-                                      <a class="nav-link text-center" href="javascript:void(0);"> <strong>See all e-Mails</strong> <i class="fa fa-angle-right"></i> </a>
+                                      <a class="nav-link text-center" href="javascript:void(0);"> <strong>Liste de toutes les Demandes</strong> <i class="fa fa-angle-right"></i> </a>
                                   </li>
                               </ul>
                           </div>
@@ -153,3 +127,45 @@
           </nav>
       </div>
       <!-- End header header -->
+      <?php echo $__env->make('layout.modals.urganceDetails', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script type="text/javascript">
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC78J7i4sucV9i5H0xMSusf8jYBDbF1JgI",
+      authDomain: "esiha-5e928.firebaseapp.com",
+      databaseURL: "https://esiha-5e928.firebaseio.com",
+      projectId: "esiha-5e928",
+      storageBucket: "esiha-5e928.appspot.com",
+      messagingSenderId: "1033888860300"
+    };
+    firebase.initializeApp(config);
+
+    // Get a reference to the database service
+    var database = firebase.database();
+
+    var listMessages = $('#listUrgences');
+
+    var ref = database.ref('Urgences');
+
+    ref.on('value', function(snapshot) {
+        var a = "";
+        //console.log(snapshot.key());
+          snapshot.forEach(function(childSnapshot) {
+          //  alert(snapshot.val().name);
+          console.log(childSnapshot.key);
+           var child = childSnapshot.val();
+           a += `<a href="#">
+                       <div class="user-img"> <img src="images/users/5.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                       <div class="mail-contnet" onClick="UrgenceView('`+child.user+`','`+child.date+`','`+child.heur+`','`+child.cas+`',`+child.degre+`)" data-toggle="modal" data-target="#urgenceDetails">
+                           <h5>`+child.user+`</h5> <span class="mail-desc">`+child.cas+`</span> <span class="time">`+child.heur+`</span>
+                       </div>
+                   </a>`;
+          });
+          listMessages.html(a);
+    });
+
+</script>
