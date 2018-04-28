@@ -23,7 +23,7 @@
                                 <div class="card-two">
                                     <header>
                                         <div class="avatar">
-                                            <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Allison Walker" />
+                                            <img src="images/user.png" alt="Allison Walker" />
                                         </div>
                                     </header>
 
@@ -49,7 +49,7 @@
                                 <div class="card-two">
                                     <header>
                                         <div class="avatar">
-                                            <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Allison Walker" />
+                                            <img src="images/user.png" alt="Allison Walker" />
                                         </div>
                                     </header>
 
@@ -75,7 +75,7 @@
                                 <div class="card-two">
                                     <header>
                                         <div class="avatar">
-                                            <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Allison Walker" />
+                                            <img src="images/user.png" alt="Allison Walker" />
                                         </div>
                                     </header>
 
@@ -101,7 +101,7 @@
                                 <div class="card-two">
                                     <header>
                                         <div class="avatar">
-                                            <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Allison Walker" />
+                                            <img src="images/user.png" alt="Allison Walker" />
                                         </div>
                                     </header>
 
@@ -127,7 +127,7 @@
                                 <div class="card-two">
                                     <header>
                                         <div class="avatar">
-                                            <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Allison Walker" />
+                                            <img src="images/user.png" alt="Allison Walker" />
                                         </div>
                                     </header>
 
