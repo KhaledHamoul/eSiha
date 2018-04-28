@@ -7,21 +7,21 @@
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
                     <h3 class="text-primary">Paramètres</h3> </div>
-                
+
             </div>
             <!-- End Bread crumb -->
             <!-- Container fluid  -->
             <div class="container-fluid">
                 <!-- Start Page Content -->
                 <div class="row">
-                  
+
                     <!-- Column -->
                     <div class="col-lg-12">
                         <div class="card">
-                            
+
                             <!-- Tab panes -->
                             <div class="tab-content">
-                                
+
                                 <div class="tab-pane active" id="settings" role="tabpanel">
                                     <div class="card-body">
                                         <form class="form-horizontal form-material">
@@ -97,7 +97,7 @@
                                                 <label class="col-sm-12">Commune</label>
                                                 <div class="col-sm-12">
                                                     <select class="form-control form-control-line">
-                                                                                    
+
                                                                                 </select>
                                                 </div>
                                             </div>
@@ -120,7 +120,7 @@
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="col-md-12">Message</label>
+                                                <label class="col-md-12">Description</label>
                                                 <div class="col-md-12">
                                                     <textarea rows="5" class="form-control form-control-line"></textarea>
                                                 </div>
@@ -144,7 +144,7 @@
                                                     <input type="checkbox">13:00-16:00 <br>
                                                     <input type="checkbox">16:00-20:00 <br>
                                                     <input type="checkbox">Après 20:00 <br>
-                                                   
+
                                                 </div>
                                             </div>
                                             <br>
@@ -154,7 +154,7 @@
                                                     <input type="checkbox"> J'accepte de recevoir des notification en dehors des heures de travail <br>
                                                     <br>
                                                     <input type="checkbox"> J'accepte de se dèplacer à un patient en cas d'urgence <br>
-                                                   
+
                                                 </div>
                                             </div>
 
@@ -175,7 +175,7 @@
                 <!-- End PAge Content -->
             </div>
             <!-- End Container fluid  -->
-         
+
         </div>
         <!-- End Page wrapper  -->
 

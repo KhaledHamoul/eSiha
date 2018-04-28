@@ -49,7 +49,7 @@
                     </div>
                     <div class="form-actions pull-right">
                         <button type="submit" onclick="answerUrgence()" data-dismiss="modal" class="btn btn-success"> <i class="fa fa-check"></i>Accepter</button>
-                        <button type="button" class="btn btn-inverse" onclick="removeDiv()" data-dismiss="modal" >Annuler</button>
+                        <button type="button" class="btn btn-inverse" onclick="cancelTraitement()" data-dismiss="modal" >Annuler</button>
                     </div>
                 </form>
             </div>
@@ -69,6 +69,19 @@
 
 removeDiv = function () {
    $('.modal-backdrop').remove();
+
+
+}
+
+cancelTraitement = function () {
+     removeDiv();
+
+     database.ref('Urgences/' + key).update({accepte: "non"});
+     if ($('#listUrgences').html() == '') {
+$('.notify').html('');
+     }
+
+
 }
 
 
@@ -92,6 +105,10 @@ removeDiv = function () {
      answerUrgence = function(){
             //  var database = firebase.database();
               database.ref('Urgences/' + key).update({accepte: "-Eu5_6kEkt90u56kEu56k"});
+              if ($('#listUrgences').html() == '') {
+$('.notify').html('');
+              }
+
               removeDiv();
 
      }

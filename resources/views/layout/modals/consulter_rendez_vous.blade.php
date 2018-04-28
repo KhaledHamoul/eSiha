@@ -180,6 +180,14 @@ removeDiv = function () {
                    time.value = timeE ;
                   date.disabled = true;
                   time.disabled = true;
+                }else{
+                  var day =dateE.substring(0, 2);
+                  var mounth =dateE.substring(3, 5);
+                  var dd =dateE.substring(6, 10)+"-"+mounth+"-"+day ;
+                   date.value = dd;
+                   time.value = timeE ;
+                  date.disabled = false;
+                  time.disabled = false;
                 }
 
 

@@ -3,8 +3,8 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'eSi7a') }}
+                <a class="navbar-brand" href="{{ url('login') }}">
+                    <img src="images/esihalogo.png" alt="Principale" class="dark-logo" style="width: 30%;" title="E-Si7A" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
