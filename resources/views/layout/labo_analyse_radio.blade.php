@@ -39,14 +39,7 @@
                                             </tr>
                                         </thead>
                                         <tbody id="listRapports">
-                                            <tr role="row" class="odd">
-                                                <td class="sorting_1">OUMELLAL Abdessalam</td>
-                                                <td>RADIO</td>
-                                                <td>Alger</td>
-                                                <td>2008/11/28</td>
-                                                <td>Pieds</td>
-                                                <td><button type="button" style="margin-right:20%;" class="btn btn-success">RESULTAT</button></td>
-                                            </tr>
+                                         
                                            <!--
                                             <tr role="row" class="even">
                                                 <td class="sorting_1">KERFAH Issam</td>

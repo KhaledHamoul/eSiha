@@ -91,7 +91,7 @@
                         </div>
                     
         <div class="modal-footer">
-           <a ><button type="submit" onclick="saveAnalyseRadio()"  class="btn btn-success"> <i class="fa fa-check"></i> Enregistrer</button></a>
+           <a ><button type="submit" onclick="saveAnalyseRadio()" onclick="removeDiv()" data-dismiss="modal" class="btn btn-success"> <i class="fa fa-check"></i> Enregistrer</button></a>
            <button type="button" class="btn btn-inverse btn-default" onclick="removeDiv()" data-dismiss="modal">Annuler</button>
           
         </div>

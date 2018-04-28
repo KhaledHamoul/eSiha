@@ -107,5 +107,7 @@
         </div>
         <!-- End Page wrapper  -->
 
-     
+@include('layout.modals.nouvelleAnalyse')
 @include('layout.footer')
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

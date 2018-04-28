@@ -8,13 +8,8 @@
             <!-- Bread crumb -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-primary">Dashboard</h3> </div>
-                <div class="col-md-7 align-self-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item active">Dashboard</li>
-                    </ol>
-                </div>
+                    <h3 class="text-primary">Profile</h3> </div>
+                
             </div>
             <!-- End Bread crumb -->
             <!-- Container fluid  -->
@@ -28,7 +23,7 @@
                                 <div class="card-two">
                                     <header>
                                         <div class="avatar">
-                                            <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Allison Walker" />
+                                            <img src="images/labo.png" alt="Allison Walker" />
                                         </div>
                                     </header>
 
@@ -37,8 +32,8 @@
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit et cupiditate deleniti.
                                     </div>
                                     <div class="contacts">
-                                        <a href=""><i class="fa fa-plus"></i></a>
-                                        <a href=""><i class="fa fa-whatsapp"></i></a>
+                                        <a href=""><i class="fa fa-gear"></i></a>
+                                        
                                         <a href=""><i class="fa fa-envelope"></i></a>
                                         <div class="clear"></div>
                                     </div>
