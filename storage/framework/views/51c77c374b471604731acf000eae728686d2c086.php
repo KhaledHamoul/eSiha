@@ -80,28 +80,22 @@ removeDiv = function () {
        var key ;
 
 
-       UrgenceView = function(user,date,heur,cas,degrer){
+       UrgenceView = function(ekey,user,date,heur,cas,degrer){
          nomAge.html('<b>'+user+'</b>(23 ans)');
          dateHeur.html('<b>'+date+'</b> '+heur);
          maladie.html(cas);
          degreGrave.html(degrer);
+         key = ekey;
        }
 
 
-   function answerUrgence(){
-        key = firebase.database().ref('Urgence').push().key;
-
-              database.ref('Urgences/' + key).set({
-                                nom: nom.value,
-                                code: code.value,
-                                date : date.value ,
-                                time: time.value ,
-                                type: type.value ,
-                                description: desc.value ,
-                                fileUrl: fname
+     answerUrgence = function(){
+       
+              database.ref('Urgences/' + key).update({
+                                accepte: "-Eu5_6kEkt90u56kEu56k"
                             });
 
-   }
+     }
 
 
 

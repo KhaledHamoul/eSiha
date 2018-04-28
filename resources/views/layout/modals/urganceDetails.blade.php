@@ -89,14 +89,11 @@ removeDiv = function () {
        }
 
 
-   function answerUrgence(){
-        key = firebase.database().ref('Urgence').push().key;
+     answerUrgence = function(){
+            //  var database = firebase.database();
+              database.ref('Urgences/' + key).update({accepte: "-Eu5_6kEkt90u56kEu56k"});
 
-              database.ref('Urgences/' + key).set({
-                                accepte: "-Eu56kEu56kEu56k"
-                            });
-
-   }
+     }
 
 
 
