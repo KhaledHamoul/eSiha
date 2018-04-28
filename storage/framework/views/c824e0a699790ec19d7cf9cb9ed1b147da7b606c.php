@@ -153,9 +153,10 @@
 
     ref.on('value', function(snapshot) {
         var a = "";
-
+        //console.log(snapshot.key());
           snapshot.forEach(function(childSnapshot) {
-
+          //  alert(snapshot.val().name);
+          console.log(childSnapshot.key);
            var child = childSnapshot.val();
            a += `<a href="#">
                        <div class="user-img"> <img src="images/users/5.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>

@@ -153,13 +153,11 @@
 
     ref.on('value', function(snapshot) {
         var a = "";
-
           snapshot.forEach(function(childSnapshot) {
-
            var child = childSnapshot.val();
            a += `<a href="#">
                        <div class="user-img"> <img src="images/users/5.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
-                       <div class="mail-contnet" onClick="UrgenceView('`+child.user+`','`+child.date+`','`+child.heur+`','`+child.cas+`',`+child.degre+`)" data-toggle="modal" data-target="#urgenceDetails">
+                       <div class="mail-contnet" onClick="UrgenceView('`+child.key+`','`+child.user+`','`+child.date+`','`+child.heur+`','`+child.cas+`',`+child.degre+`)" data-toggle="modal" data-target="#urgenceDetails">
                            <h5>`+child.user+`</h5> <span class="mail-desc">`+child.cas+`</span> <span class="time">`+child.heur+`</span>
                        </div>
                    </a>`;

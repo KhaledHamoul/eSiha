@@ -82,10 +82,9 @@ removeDiv = function () {
 
        UrgenceView = function(user,date,heur,cas,degrer){
          nomAge.html('<b>'+user+'</b>(23 ans)');
-         dateHeur.html('<b>'+date+'</b>'+heur);
+         dateHeur.html('<b>'+date+'</b> '+heur);
          maladie.html(cas);
          degreGrave.html(degrer);
-         alert('kmdjsfl');
        }
 
 
