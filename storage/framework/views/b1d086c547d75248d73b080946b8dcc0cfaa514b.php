@@ -13,10 +13,7 @@
               <div class="navbar-header">
                   <a class="navbar-brand" href="index.html">
                       <!-- Logo icon -->
-                      <b><img src="images/logo.png" alt="homepage" class="dark-logo" /></b>
-                      <!--End Logo icon -->
-                      <!-- Logo text -->
-                      <span><b>E-Si7A</b></span>
+                      <b><img src="images/esihalogo.png" alt="Principale" class="dark-logo" style="width: 60%;" title="E-Si7A" /></b>
                   </a>
               </div>
               <!-- End Logo -->
@@ -90,7 +87,7 @@
                       <!-- Messages -->
                       <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle text-muted  " href="#" id="2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-envelope"></i>
-                            <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+                            <div class="notify">  </div>
                           </a>
                           <div class="dropdown-menu dropdown-menu-right mailbox animated zoomIn" aria-labelledby="2">
                               <ul>
@@ -155,12 +152,16 @@
         var a = "";
           snapshot.forEach(function(childSnapshot) {
            var child = childSnapshot.val();
-           a += `<a href="#">
-                       <div class="user-img"> <img src="images/users/5.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
-                       <div class="mail-contnet" onClick="UrgenceView('`+childSnapshot.key+`','`+child.user+`','`+child.date+`','`+child.heur+`','`+child.cas+`',`+child.degre+`)" data-toggle="modal" data-target="#urgenceDetails">
-                           <h5>`+child.user+`</h5> <span class="mail-desc">`+child.cas+`</span> <span class="time">`+child.heur+`</span>
-                       </div>
-                   </a>`;
+           if (child.accepte == "0") {
+             $('.notify').html('<span class="heartbit"></span> <span class="point"></span>');
+             a += `<a href="#">
+                         <div class="user-img"> <img src="images/users/5.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                         <div class="mail-contnet" onClick="UrgenceView('`+childSnapshot.key+`','`+child.user+`','`+child.date+`','`+child.heur+`','`+child.cas+`',`+child.degre+`)" data-toggle="modal" data-target="#urgenceDetails">
+                             <h5>`+child.user+`</h5> <span class="mail-desc">`+child.cas+`</span> <span class="time">`+child.heur+`</span>
+                         </div>
+                     </a>`;
+           }
+
           });
           listMessages.html(a);
     });

@@ -7,7 +7,6 @@
 @include('layout.aside_menu_labo')
 
 
-
   <!-- Page wrapper  -->
         <div class="page-wrapper">
             <!-- Bread crumb -->
